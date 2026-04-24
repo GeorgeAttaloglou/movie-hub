@@ -1,6 +1,6 @@
 # MovieHub
 
-A React-based web application developed by Γιώργος Ατταλόγλου (2397) and Μάριος Ζαμπάρας (2435), bootstrapped with [Create React App](https://create-react-app.dev/).
+A React-based web application developed by George Attaloglou and Marios Zamparas, bootstrapped with [Create React App](https://create-react-app.dev/).
 
 ## Table of Contents
 
@@ -31,7 +31,6 @@ A React-based web application developed by Γιώργος Ατταλόγλου (
 3. **API integration**
 
    To run the app with full functionality:
-
    - **Create a TMDb account** and request an API key here: [TMDb API](https://www.themoviedb.org/settings/api).
    - **Create a `.env` file** in the project root and add your API key:
 
@@ -39,22 +38,22 @@ A React-based web application developed by Γιώργος Ατταλόγλου (
    REACT_APP_TMDB_API_KEY=your_api_key
    ```
 
- 4. **Start the development server:**
+4. **Start the development server:**
 
-   ```bash
-   npm start
-   ```
+```bash
+npm start
+```
 
-   The application will run in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The application will run in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-* **`npm start`**: Runs the app in development mode.
-* **`npm test`**: Launches the test runner in interactive watch mode.
-* **`npm run build`**: Builds the app for production to the `build` folder.
-* **`npm run eject`**: Removes the single build dependency from your project.
+- **`npm start`**: Runs the app in development mode.
+- **`npm test`**: Launches the test runner in interactive watch mode.
+- **`npm run build`**: Builds the app for production to the `build` folder.
+- **`npm run eject`**: Removes the single build dependency from your project.
 
 ## API Documentation
 
@@ -69,9 +68,11 @@ All requests to the TMDb API require an API key. Store your key in the `.env` fi
 To fetch popular movies:
 
 ```js
-fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_TMDB_API_KEY}`)
-   .then(response => response.json())
-   .then(data => console.log(data));
+fetch(
+  `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_TMDB_API_KEY}`,
+)
+  .then((response) => response.json())
+  .then((data) => console.log(data));
 ```
 
 ### Endpoints Used
@@ -147,11 +148,11 @@ JS_App/
 └── LICENSE
 ```
 
-* **`public/`**: Contains the HTML file and images.
-* **`src/`**: Contains the React components and JavaScript files.
-* **`Contexts/`**: Contains context providers for state management.
-* **`supabaseClient.js`**: Initializes the Supabase client for database interactions.
-* **`package.json`**: Lists dependencies and project metadata.
+- **`public/`**: Contains the HTML file and images.
+- **`src/`**: Contains the React components and JavaScript files.
+- **`Contexts/`**: Contains context providers for state management.
+- **`supabaseClient.js`**: Initializes the Supabase client for database interactions.
+- **`package.json`**: Lists dependencies and project metadata.
 
 ## License
 
